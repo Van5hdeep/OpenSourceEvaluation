@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
     <link rel="stylesheet" href="style.css" />
 </head>
 
@@ -14,14 +15,19 @@
         <div class="nav-left">
             <div class="nav-logo"><img src="new_logo.png" alt="logo" /></div>
             <div class="nav-name">
-                <h2>UrbanIQ</h2>
+                <a href="./index.html"><h2>UrbanIQ</h2></a>
             </div>
         </div>
-        <div class="nav-right">
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Cities</a>
-            <a href="#">Contact</a>
+
+        <div class="navbar-right">
+            <div class="nav-right-link">
+                <a href="#">Home</a>
+                <a href="./aboutus.html">About</a>
+                <a href="#">Cities</a>
+            </div>
+            <div class="nav-right">
+                <a href="./signup.html" target="_blank"><button>Sign up</button></a>
+            </div>
         </div>
     </nav>
     <div class="view1">
@@ -35,11 +41,7 @@
 
 
         <div class="cities">
-            <select id="city-select">
-                <option value="">Select a City...</option>
-                <option value="delhi">Delhi</option>
-                <option value="mumbai">Mumbai</option>
-            </select>
+                <input type="text" placeholder="Enter city name...">
             <button class="btn-dashboard">View Dashboard</button>
         </div>
 
@@ -54,7 +56,8 @@
                     <i class="ri-roadster-fill"></i>
                 </div>
                 <h3>Real-time Traffic Insights</h3>
-                <p>Analyze real-time traffic density with intuitive graphs. Identify peak congestion times and understand the daily rhythm of the city's streets.</p>
+                <p>Analyze real-time traffic density with intuitive graphs. Identify peak congestion times and
+                    understand the daily rhythm of the city's streets.</p>
             </div>
 
             <div class="view2-card">
@@ -62,7 +65,8 @@
                     <i class="ri-leaf-fill"></i>
                 </div>
                 <h3>Air Quality Monitoring</h3>
-                <p>Track key pollutant levels and the overall Air Quality Index (AQI) in real-time. Understand the air you breathe and make healthier daily decisions.</p>
+                <p>Track key pollutant levels and the overall Air Quality Index (AQI) in real-time. Understand the air
+                    you breathe and make healthier daily decisions.</p>
             </div>
 
             <div class="view2-card">
@@ -70,7 +74,8 @@
                     <i class="ri-sun-fill"></i>
                 </div>
                 <h3>Dynamic Weather Updates</h3>
-                <p>Track live temperature, humidity, and precipitation forecasts with updating graphs. Stay ahead of changing conditions and plan your day with confidence.</p>
+                <p>Track live temperature, humidity, and precipitation forecasts with updating graphs. Stay ahead of
+                    changing conditions and plan your day with confidence.</p>
             </div>
         </div>
     </section>
@@ -79,9 +84,72 @@
     <section class="view3">
         <h2 class="section-title">Why UrbanIQ Data Matters</h2>
         <p class="view3-text">
-           Understanding a city's live data is the first step to improving it. By making complex patterns in traffic and air quality clear and accessible, we empower smarter decisions for a healthier, more efficient urban future.
+            Understanding a city's live data is the first step to improving it. By making complex patterns in traffic
+            and air quality clear and accessible, we empower smarter decisions for a healthier, more efficient urban
+            future.
         </p>
     </section>
+
+
+    <footer class="view4">
+        <div class="view4-container">
+
+
+            <div class="view4-col">
+                <div class="view4-logo">
+                    <i class="fa-solid fa-cube"></i>
+                    <h2>UrbanIQ <br> Dashboard</h2>
+                </div>
+                <p class="view4-text">Empowering urban understanding through real-time open data insights.</p>
+
+            </div>
+
+
+            <div class="view4-link">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Supported Cities</a></li>
+                </ul>
+            </div>
+
+
+            <div class="view4-link">
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="#"><i class="ri-github-fill"></i> Github Repository</a></li>
+                    <li><a href="#">API Sources</a></li>
+                </ul>
+            </div>
+
+
+            <div class="view4-col2">
+                <h4>Connect</h4>
+                <div class="social-icons">
+                    <div class="social-item">
+                        <a href="#" class="social-icon-link">
+                            <i class="ri-linkedin-fill"></i>
+                        </a>
+                        <span>LinkedIn</span>
+                    </div>
+                    <div class="social-item">
+                        <a href="#" class="social-icon-link">
+                            <i class="ri-twitter-fill"></i>
+                        </a>
+                        <span>Twitter</span>
+                    </div>
+                    <div class="social-item">
+                        <a href="#" class="social-icon-link">
+                            <i class="ri-mail-fill"></i>
+                        </a>
+                        <span>Email</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
 
 
 </body>

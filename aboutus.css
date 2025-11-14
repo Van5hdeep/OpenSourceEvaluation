@@ -1,12 +1,15 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-html , body{
-    height: 100%;
+
+html, body {
     width: 100%;
 }
+
+
+
 
 .navbar{
     margin: 0;
@@ -69,108 +72,54 @@ html , body{
     height: 40px;
     width: 40px;
 }
-.view1 img{
-      width: 100%;
-    height: 70vh;
-}
 
-
-.view1 {
-    position: relative;
-    width: 100%;
-    height: 50vh;
-}
-
-.view1 img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-    filter: brightness(0.6); 
-}
-
-.view1 h1 {
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%, -50%); 
-    color: white;
-    font-size: 3rem;
-    text-align: center;
-    width: 100%;
-    z-index: 10;
-}
-
-.view1 p {
-    position: absolute;
-    top: 37%;
-    left: 50%;
-    transform: translate(-50%, -50%); 
-    color: white;
-    text-align: center;
-    width: 100%;
-    z-index: 1;
-}
-
-.cities {
-    position: absolute;
-    top: 57%;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-    padding: 5px;
-    overflow: hidden;
-}
-
-.cities input {
-    border: none;
-    padding: 12px 14px;
-}
-
-.btn-dashboard {
-    background-color: #8A92A3;
-    color: #ffffff;
-    border: none;
-    padding: 10px 25px;
-    font-size: 1rem;
-    font-weight: 500;
-    cursor: pointer;
-    border-radius: 6px;
-    margin-left: 5px;
-}
-
-.btn-dashboard:hover {
-    background-color: #787f8d;
-}
-
-
-
-.view2 {
-    background-color: #f7f8fa;
-    padding: 80px 20px;
-}
-
-.view2-text {
-    text-align: center;
+.section-title {
     font-size: 2rem;
     font-weight: 600;
     color: #333;
-    margin-top: 20px;
     margin-bottom: 50px;
+    text-align: center;
 }
 
-.view2-grid {
+.about-hero {
+    padding: 80px 20px;
+    background-color: #ffffff;
+}
+.about-container {
+    max-width: 1100px;
+    margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr 1.2fr;
+    gap: 60px;
+    align-items: center;
+}
+.about-image-col img {
+    width: 100%;
+    border-radius: 12px;
+    display: block;
+}
+.about-content-col .section-title {
+    text-align: left;
+}
+.about-content-col p {
+    color: #777;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+
+.team-section {
+    padding: 80px 20px;
+    background-color: #f7f8fa;
+}
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     gap: 30px;
     max-width: 1100px;
     margin: 0 auto;
 }
-
-.view2-card {
+.team-card {
     background-color: #ffffff;
     border-radius: 12px;
     padding: 40px 30px;
@@ -178,57 +127,27 @@ html , body{
     box-shadow: 0 4px 25px rgba(0, 0, 0, 0.07);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
-.view2-card:hover {
+.team-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
 }
-
-.view2-icon {
-    width: 60px;
-    height: 60px;
-    margin: 0 auto 25px auto;
+.team-member-photo {
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
-    background-color: #e8f5f4;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    object-fit: cover;
+    margin-bottom: 20px;
 }
-
-.view2-icon i {
-    font-size: 2rem;
-    color: #4a6a68;
-}
-
-.view2 h3 {
+.team-card h3 {
     font-size: 1.25rem;
     font-weight: 600;
     color: #333;
     margin-bottom: 10px;
 }
-
-.view2 p {
-    color: #777;
-    line-height: 1.6;
+.team-member-role {
+    color: #4a6a68;
+    font-weight: 500;
 }
-
-.view3 {
-    padding-top: 50px;
-    text-align: center;
-
-}
-
-.view3-text {
-    max-width: 800px;
-    margin: 20px auto;
-    text-align: center;
-    color: #777;
-    line-height: 1.7;
-}
-
-
-
-
 
 .view4 {
     background-color: #2C3038;
@@ -236,7 +155,6 @@ html , body{
     padding: 60px 0;
     font-size: 14px;
 }
-
 .view4-container {
     max-width: 1200px;
     margin: 0 auto;
@@ -245,13 +163,10 @@ html , body{
     grid-template-columns: 2fr 1fr 1fr 1.5fr;
     gap: 40px;
 }
-
 .view4-col {
     padding-right: 20px;
     border-right: 1px solid #404550;
 }
-
-
 .view4-logo {
     display: flex;
     align-items: center;
@@ -271,8 +186,6 @@ html , body{
     margin-bottom: 20px;
     line-height: 1.7;
 }
-
-
 .view4-link h4 {
     color: #fff;
     font-size: 1rem;
@@ -298,7 +211,6 @@ html , body{
     margin-right: 5px;
     font-size: 1.2rem;
 }
-
 .view4-col2 h4 {
     color: #fff;
     font-size: 1rem;
@@ -323,6 +235,7 @@ html , body{
     font-size: 1.5rem;
     margin-bottom: 8px;
     text-decoration: none;
+    transition: transform 0.3s ease;
 }
 .social-icon-link:hover {
     transform: translateY(-3px);
