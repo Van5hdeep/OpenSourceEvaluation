@@ -109,3 +109,51 @@ canvas {
 #aqiCard {
   border-top: 3px solid #22c55e;
 }
+
+
+@media (max-width: 768px) {
+  .dashboard-header {
+    flex-direction: column;
+    gap: 8px;
+    padding: 16px;
+    text-align: center;
+  }
+
+  .header-left h1 {
+    font-size: 1.25rem;
+  }
+
+  #dashboard-heading {
+    font-size: 1rem;
+    width: 100%;
+  }
+
+  .main-content {
+    padding: 16px;
+  }
+
+  .chart-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .card {
+    padding: 40px;
+  }
+
+  .current-metric-display {
+    margin: 16px 0;
+  }
+
+  .current-metric-display p {
+    font-size: 2.8rem;
+  }
+
+  .current-metric-display span {
+    font-size: 0.9rem;
+  }
+
+  .chart-wrapper {
+    min-height: 220px;
+  }
+}
