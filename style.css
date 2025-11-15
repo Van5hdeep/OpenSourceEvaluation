@@ -18,10 +18,7 @@ body {
   padding: 0 20px;
   color: white;
 }
-.navbar-right {
-  display: flex;
-  gap: 100px;
-}
+
 .nav-left {
   display: flex;
   gap: 10px;
@@ -29,7 +26,8 @@ body {
 }
 .nav-right-link {
   display: flex;
-  gap: 30px;
+  padding-right: 40px;
+  gap: 35px;
 }
 .nav-name a {
   text-decoration: none;
